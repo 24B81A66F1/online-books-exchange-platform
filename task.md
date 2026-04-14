@@ -1,0 +1,11 @@
+Online Book Exchange Platform works as a flow of interactions between users, the frontend (what users see), the backend (logic), and the database (storage). Here’s how it actually functions step by step in a simple, real-world way:
+
+When a user opens the application, they first register or log in. The frontend (HTML/CSS/JS pages) collects the user’s details and sends them to the backend server. The backend verifies the data, stores it in the database, and allows access only if the credentials are correct. Once logged in, the user reaches a dashboard where they can interact with the system.
+
+If a user wants to share a book, they fill out a form with details like title, author, category, and condition. This information is sent to the backend, which processes it and saves it in the database. Now this book becomes visible to other users on the platform. Other users can browse all available books or search using filters. When they search, the frontend sends a request to the backend, which fetches matching data from the database and displays it.
+
+When a user finds a book they want, they send an exchange request. This request is stored in the database and linked to both the requester and the book owner. The owner can then view incoming requests in their dashboard and decide to accept or reject them. If accepted, the exchange is confirmed, and both users can proceed (either by contacting each other or following the platform’s instructions). The system may also update the book’s availability status to prevent duplicate requests.
+
+Behind the scenes, the backend handles all the logic—like validating inputs, managing requests, updating book status, and ensuring security—while the database keeps track of users, books, and transactions. The frontend simply acts as the interface that lets users perform all these actions easily.
+
+In short, my project works by allowing users to list books → other users discover them → send requests → owners approve → and the exchange happens, all coordinated through backend logic and database management.
